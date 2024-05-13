@@ -23,7 +23,6 @@ export default props => {
         return(
             <ThemeProvider style={style.fundo}>
                 <ListItem
-                    bottomDivider
                     style={style.body}
                     >
                         
@@ -77,7 +76,7 @@ export default props => {
                     ]}
                     onPress={() => {Alert.alert('Pedido enviado')}}
                 >   
-                    <Text style={style.buttonText}>Button</Text>
+                    <Text style={style.buttonText}>Continue</Text>
                 </Pressable>
             </View>
         </View>
@@ -114,8 +113,10 @@ const style = StyleSheet.create(
         body:{
             backgroundColor: '#000',
             borderRadius: 8,
+            elevation: 20,
+            margin: 15,
 
-        }
+        },
     
     }
 )

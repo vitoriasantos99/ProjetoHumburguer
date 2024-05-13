@@ -20,10 +20,9 @@ export default props => {
                     {
                         headerStyle:{backgroundColor:'#f4511e'},
                         headerTintColor: '#fff',
-                        headerTitleStyle:{fontWeight:'bold'}
+                        headerTitleStyle:{fontWeight:'bold'},
                     }}>
                     <Stack.Screen name='Foods' component={FoodList} />
-
                 </Stack.Navigator>
             </NavigationContainer>
         </SafeAreaView>
